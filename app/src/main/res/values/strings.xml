@@ -40,4 +40,8 @@
     <string name="podaj_numer_domu">Podaj numer domu</string>
     <string name="podaj_kod_pocztowy">Podaj kod pocztowy</string>
     <string name="panel_rejestracji4">Panel Rejestracji 4/4</string>
+    <string name="zaloz_konto">Załóż konto</string>
+    <string name="email">Email</string>
+    <string name="textview4">Twój stan konta:</string>
+    <string name="panel_rejestracji5">Panel rejestracji</string>
 </resources>

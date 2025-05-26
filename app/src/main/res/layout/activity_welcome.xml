@@ -24,7 +24,7 @@
         android:id="@+id/Welcome2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/textview2"
+        android:text="@string/textview4"
         android:textSize="20sp"
         app:layout_constraintTop_toBottomOf="@+id/Welcome"
         app:layout_constraintStart_toStartOf="parent"
@@ -42,26 +42,5 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/Welcome2" />
 
-    <Button
-        android:id="@+id/btnSignUp"
-        android:layout_width="140dp"
-        android:layout_height="54dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="108dp"
-        android:text="@string/zaloguj_sie"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/btnSignIn"
-        app:layout_constraintTop_toBottomOf="@+id/logo" />
-
-    <Button
-        android:id="@+id/btnSignIn"
-        android:layout_width="140dp"
-        android:layout_height="54dp"
-        android:layout_marginTop="108dp"
-        android:layout_marginEnd="8dp"
-        android:text="@string/zarejestruj_sie"
-        app:layout_constraintEnd_toStartOf="@+id/btnSignUp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/logo" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

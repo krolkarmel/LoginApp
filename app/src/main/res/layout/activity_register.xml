@@ -10,7 +10,7 @@
 
     <TextView
         android:id="@+id/registerTextView"
-        android:text="@string/panel_rejestracji1"
+        android:text="@string/panel_rejestracji5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="120dp"
@@ -24,8 +24,8 @@
         android:id="@+id/btnBack"
         android:layout_width="60dp"
         android:layout_height="60dp"
-        android:layout_marginStart="4dp"
-        android:layout_marginTop="4dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="16dp"
         android:background="@null"
         android:contentDescription="@string/back_id"
         android:scaleType="centerInside"
@@ -37,16 +37,16 @@
         android:id="@+id/logo1"
         android:layout_width="60dp"
         android:layout_height="60dp"
-        android:layout_marginStart="4dp"
-        android:layout_marginTop="4dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="60dp"
         android:contentDescription="@string/logo_coinllet"
         android:src="@drawable/logo"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/nameText"
-        android:text="@string/name"
+        android:id="@+id/emailText"
+        android:text="@string/email"
         android:layout_width="140dp"
         android:layout_height="60dp"
         android:gravity="center"
@@ -57,136 +57,55 @@
         android:layout_marginStart="16dp" />
 
     <com.google.android.material.textfield.TextInputEditText
-        android:id="@+id/textInputName"
+        android:id="@+id/textInputEmail"
         android:layout_width="0dp"
         android:layout_height="60dp"
         android:layout_marginEnd="16dp"
         android:hint="@string/podaj_imie"
-        app:layout_constraintBottom_toBottomOf="@+id/nameText"
+        app:layout_constraintBottom_toBottomOf="@+id/emailText"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/nameText"
-        app:layout_constraintTop_toTopOf="@+id/nameText" />
+        app:layout_constraintStart_toEndOf="@+id/emailText"
+        app:layout_constraintTop_toTopOf="@+id/emailText" />
 
     <TextView
-        android:id="@+id/secondNameText"
-        android:text="@string/drugieImie"
-        android:layout_width="140dp"
-        android:layout_height="60dp"
-        android:gravity="center"
-        android:textSize="24sp"
-        app:layout_constraintTop_toBottomOf="@+id/nameText"
-        app:layout_constraintStart_toStartOf="parent"
-        android:layout_marginTop="16dp"
-        android:layout_marginStart="16dp" />
-
-    <com.google.android.material.textfield.TextInputEditText
-        android:id="@+id/textInputSecondName"
-        android:layout_width="0dp"
-        android:layout_height="60dp"
-        android:layout_marginEnd="16dp"
-        android:hint="@string/podaj_drugie_imie"
-        app:layout_constraintBottom_toBottomOf="@+id/secondNameText"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/secondNameText"
-        app:layout_constraintTop_toTopOf="@+id/secondNameText" />
-
-    <TextView
-        android:id="@+id/lastNameText"
-        android:text="Nazwisko"
-        android:layout_width="140dp"
-        android:layout_height="60dp"
-        android:gravity="center"
-        android:textSize="24sp"
-        app:layout_constraintTop_toBottomOf="@+id/secondNameText"
-        app:layout_constraintStart_toStartOf="parent"
-        android:layout_marginTop="16dp"
-        android:layout_marginStart="16dp" />
-
-    <com.google.android.material.textfield.TextInputEditText
-        android:id="@+id/textInputLastName"
-        android:layout_width="0dp"
-        android:layout_height="60dp"
-        android:layout_marginEnd="16dp"
-        android:hint="@string/podaj_nazwisko"
-        app:layout_constraintBottom_toBottomOf="@+id/lastNameText"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/lastNameText"
-        app:layout_constraintTop_toTopOf="@+id/lastNameText" />
-
-
-    <TextView
-        android:id="@+id/dateOfBirth"
+        android:id="@+id/passwordText"
         android:layout_width="140dp"
         android:layout_height="60dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="32dp"
         android:gravity="center"
-        android:text="@string/data_urodzenia"
+        android:text="@string/password"
         android:textSize="24sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/lastNameText" />
-
-
-    <com.google.android.material.textfield.TextInputEditText
-        android:id="@+id/textInputDateOfBirth"
-        android:layout_width="0dp"
-        android:layout_height="60dp"
-        android:layout_marginEnd="16dp"
-        android:hint="@string/podaj_date_urodzenia"
-        android:focusable="false"
-        android:clickable="true"
-        app:layout_constraintBottom_toBottomOf="@+id/dateOfBirth"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/dateOfBirth"
-        app:layout_constraintTop_toTopOf="@+id/dateOfBirth" />
-
-    <com.google.android.material.textfield.TextInputLayout
-        android:layout_width="0dp"
-        android:layout_height="60dp"
-        android:layout_marginEnd="16dp"
-        app:layout_constraintBottom_toBottomOf="@+id/dateOfBirth"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/dateOfBirth"
-        app:layout_constraintTop_toTopOf="@+id/dateOfBirth"/>
-
-
-    <TextView
-        android:id="@+id/peselText"
-        android:layout_width="140dp"
-        android:layout_height="60dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
-        android:gravity="center"
-        android:text="@string/pesel"
-        android:textSize="24sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/dateOfBirth" />
-
+        app:layout_constraintTop_toBottomOf="@+id/textInputEmail" />
 
     <com.google.android.material.textfield.TextInputEditText
-        android:id="@+id/textInputPesel"
+        android:id="@+id/textInputPassword"
         android:layout_width="0dp"
         android:layout_height="60dp"
         android:layout_marginEnd="16dp"
-        android:hint="@string/podaj_pesel"
-        app:layout_constraintBottom_toBottomOf="@+id/peselText"
+        android:hint="@string/podaj_haslo"
+        app:layout_constraintBottom_toBottomOf="@+id/passwordText"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toEndOf="@+id/peselText"
-        app:layout_constraintTop_toTopOf="@+id/peselText"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/passwordText"
+        app:layout_constraintTop_toTopOf="@+id/passwordText"
         app:layout_constraintVertical_bias="1.0" />
 
 
+
     <Button
-        android:id="@+id/buttonNext"
+        android:id="@+id/buttonFinish"
         android:layout_width="200dp"
         android:layout_height="55dp"
         android:layout_marginTop="60dp"
-        android:text="@string/przejdz_dalej"
+        android:layout_marginBottom="28dp"
+        android:text="@string/zaloz_konto"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/peselText"
+        app:layout_constraintTop_toBottomOf="@+id/passwordText"
         tools:ignore="MissingConstraints" />
 
 
